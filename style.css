@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Jost:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter'  sans-serif;
+}
+.bg-gray-300 h6 {
+    font-size: 10px;
+}
+
+nav  {
+    background-color: white;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+.logo {
+    width: 145.62px;
+    height: 138.62px;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 40px;
+}
+.nav-links a {
+    color: black;
+}
+.nav-links li {
+    position: relative;
+}
+nav .nav-links li a:hover {
+    color: #0D6EFD;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+.bugger {
+    color: black;
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown_menu {
+    display: none;
+    z-index: 4;
+}
+nav .nav-links li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 8px;
+    color: #0D6EFD;
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 6px;
+    transition: 2s ease-in-out;
+    
+
+}
+
+/* this is where the styling for the BROWSER section start with  */
+
+.hero-section {
+    background: rgba(0, 0, 0, 0.6) url('/image/laptop.jpg');
+    background-blend-mode: darken;
+    width: 100%;
+    height: 377px;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-section .text-center {
+    padding-top: 8%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+.hero-section h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.hero-section p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    padding: 24px;
+}
+
+
+::placeholder {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.input-form {
+    display: flex;
+    border: solid 1px white;
+    width: 50%;
+    margin: 0;
+    border-radius: 8px;
+    position: absolute;
+    left: 25%;
+    margin-top: 24px;
+}
+.input-form input {
+    background-color: transparent;
+    border-color: transparent;
+    padding-right: 80px;
+    padding-left: 20px;
+    border-radius: 8px;
+    color: white;
+}
+.input-form button {
+    font-size: 25px;
+}
+#last-sec-button {
+    padding: 12px 24px 12px 24px;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    background-color: #0D6EFD;
+    margin-top: 9%;
+}
+
+/* this is where the styling for the BROWSER section END  */
+
+
+/* this is where the LATEST-ARTICLE section start from */
+
+/* the first card  start*/
+.card {
+    width: 526px;
+    height: 817px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px  silver;
+    border-radius: 8px;
+}
+#image-1 {
+    height: 535px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-text h5 {
+    font-size: 18px;
+    color: black;
+    line-height: 60px;
+    line-height: 50%;
+    margin-top: 16px;
+}
+
+.card-text span {
+    color: #BDBDBD;
+    font-size: 12px;
+    line-height: 100%;
+    line-height: 50px;
+}
+
+.card-text h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+
+.card-text p {
+    font-size: 12px;
+    color: #4F4F4F;
+    word-break: keep-all;
+    font-weight: 200;
+    line-height: 100%;
+    line-height: 20px;
+}
+.card-button-set #one {
+    font-size: 10px;
+    color: white;
+    padding: 3px 12px 3px 12px;
+    background-color: #86B6FE;
+    border-radius: 4px;
+    border: solid 1px transparent;
+}
+.card-button-set #two {
+    font-size: 10px;
+    color: white;
+    padding: 3px 12px 3px 12px;
+    background-color: #B2CE80;
+    border-radius: 4px;
+    border: solid 1px transparent;
+}
+#span a {
+    color: #0D6EFD;
+    font-size: 16px;
+    left: 23%;
+    padding-left: 70%;
+    padding-top: 23px;
+}
+
+/* the first card ENDS */
+
+.card-2 {
+    width: 600px;
+    height: 300px;   
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:  white;
+    box-shadow: 2px 2px 2px 2px rgb(136, 134, 134) ;
+}
+
+.card-2 img {
+    height: 100%;
+    width: 300px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card-2 h5 {
+    font-size: 16px;
+    color: black;
+}
+.card-2 span {
+    color: #BDBDBD;
+    font-size: 12px;
+
+}
+.card-2 h3 {
+    font-size: 20px;
+    color: black;
+    padding-top: 13px;
+    font-weight: 700;
+}
+.card-2 p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #4F4F4F;
+    font-weight: 100;
+    word-break: keep-all;
+    line-height: 100%;
+    line-height: 20px;
+}
+.card-2 #two {
+    background-color: #B2CE80;
+    font-size: 8px;
+    font-weight: 200;
+    color: white;
+    padding: 2px 13px 2px 13px;
+    border-radius: 4px;
+}
+
+.card-2 #one {
+    background-color: #86B6FE;
+    font-size: 8px;
+    font-weight: 200;
+    color: white;
+    padding: 2px 13px 2px 13px;
+    border-radius: 4px;
+}
+
+#read-button {
+    font-size: 12px;
+    color: #0D6EFD;
+    padding-left: 70%;
+    padding-top: 20px;
+}
+
+/* ENDS  */
+
+.card-3 {
+    height: 635px;
+    width: 397px;
+    border-radius: 6px;
+    background-color: white;
+}
+.card-3 img  {
+    width: 100%;
+    height: 318px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.card-3 h5 {
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+}
+
+.card-3 span {
+    color: #BDBDBD;
+    font-size: 10px;
+    padding-top: 1px;
+}
+
+.card-3 h2 {
+    font-size: 20px;
+    color: #042554;
+    font-weight: 700;
+    padding-top: 8px;
+    word-break: break-all;
+    width: 86%;
+}
+
+.card-3 p {
+    padding-top: 8px;
+    width: 85%;
+    word-break: keep-all;
+    font-size: 12px;
+    color: #4F4F4F;
+    font-weight: 300;
+    line-height: 100%;
+    line-height: 22px;
+}
+
+.card-3-button .two {
+    padding: 2px 12px 2px 12px;
+    background-color: #86B6FE;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+}
+.card-3-button .one {
+    padding: 2px 12px 2px 12px;
+    background-color: #B2CE80;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+}
+.card-3-read-button {
+    font-size: 16px;
+    color: #0D6EFD;
+    margin-top: 20px;
+    margin-left: 60%;
+}
+
+/* last section before the footer start */
+
+.last-subscribe {
+    width: 100%;
+    height: 317px;
+    background-image: url('/image/Rectangle\ 17.png');
+}
+.last-subscribe h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.last-subscribe p {
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.last-subscribe form {
+    width: 600px;
+    height: 50px;
+    border: solid 1px white;
+    display: flex;
+    margin-top: 20px;
+}
+
+.last-subscribe form input {
+     background-color: transparent;
+     padding-left: 20px;
+     width: 550px;
+     border: none;
+}
+
+.last-subscribe form button {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+
+}
+.last-subscribe div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+::placeholder {
+    color: white;
+}
+
+/* last section before the footer start */
+
+/* this is where the styling for the footer start from  */
+
+.footer {
+    width: 100%;
+    height: 482px;
+    background-color: #031633;
+    padding-top: ;
+}
+
+.footer-1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-1 p {
+    font-size: 14px;
+    color: white;
+    line-height: 100%;
+    line-height: 35px;
+}
+
+.footer-2 h6 {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-2 p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 100%;
+    line-height: 35px;
+}
+
+.footer-3 h6 {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-3 p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 100%;
+    line-height: 35px;
+}
+
+.footer-4 h6 {
+    font-size: 18px;
+    color: white;
+}
+
+.footer-4 p {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 100%;
+    line-height: 35px;
+}
+
+.last-101 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 100;
+}
+ 
+
+
+@media  screen and (max-width: 375px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    nav  {
+        height: 80px;
+    }
+
+    body h1 {
+        font-size: 18px;
+        font-weight: 300;
+        color: black;
+
+    }
+
+
+    .hero-section {
+        background: rgba(0, 0, 0, 0.6) url('/image/Rectangle\ 1442.png');
+        background-blend-mode: darken;
+        width: 100%;
+        height: 140px;
+        background-size: cover;
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero-section h2 {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+    
+    }
+    
+    .hero-section p {
+        display: none;
+    }
+
+
+    .input-form {
+        display: flex;
+        border: solid 1px white;
+        width: 80%;
+        border-radius: 4px;
+        position: absolute;
+        left: 10%;
+        margin-top: 15px;
+    }   
+    .input-form input {
+        background-color: transparent;
+        border-color: transparent;
+        padding-right: 2px;
+        padding-left: 5px;
+        border-radius: 8px;
+        color: white;
+        width: 250px;
+    
+    }
+    .input-form button {
+     font-size: 10px;
+
+    }
+
+
+    ::placeholder {
+        color: white;
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .card {
+        width: 327px;
+        height: 461px;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px  silver;
+        border-radius: 8px;
+    }
+    #image-1 {
+        height: 166px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .card-text h5 {
+        font-size: 12px;
+        color: black;
+        line-height: 60px;
+        line-height: 50%;
+        margin-top: 16px;
+    }
+    
+    .card-text span {
+        color: #BDBDBD;
+        font-size: 10px;
+        line-height: 100%;
+        line-height: 30px;
+    }
+    
+    .card-text h2 {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+    }
+    
+    .card-text p {
+        font-size: 10px;
+        color: #4F4F4F;
+        word-break: keep-all;
+        font-weight: 200;
+        line-height: 100%;
+        line-height: 20px;
+    }
+    .card-button-set #one {
+        font-size: 10px;
+        color: white;
+        padding: 2px 9px 2px 9px;
+        background-color: #86B6FE;
+        border-radius: 2px;
+        border: solid 1px transparent;
+    }
+    .card-button-set #two {
+        font-size: 10px;
+        color: white;
+        padding: 2px 9px 2px 9px;
+        background-color: #B2CE80;
+        border-radius: 2px;
+        border: solid 1px transparent;
+    }
+    #span a {
+        color: #0D6EFD;
+        font-size: 14px;
+        left: 12%;
+        padding-left: 65%;
+        padding-top: 20px;
+    }
+
+   #read-button {
+        font-size: 12px;
+        color: #0D6EFD;
+        padding-left: 70%;
+        padding-top: 20px;
+    }
+
+    .card-3 {
+        height: 461px;
+        width: 327px;
+        border-radius: 4px;
+        background-color: white;
+    }
+    .card-3 img  {
+        width: 100%;
+        height: 166px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .card-3 h5 {
+        font-size: 12px;
+        color: black;
+        font-weight: 300;
+    }
+    
+    .card-3 span {
+        color: #BDBDBD;
+        font-size: 10px;
+        padding-top: 1px;
+    }
+    
+    .card-3 h2 {
+        font-size: 16px;
+        color: #042554;
+        font-weight: 700;
+        padding-top: 8px;
+        word-break: break-all;
+        width: 86%;
+    }
+    
+    .card-3 p {
+        padding-top: 8px;
+        width: 85%;
+        word-break: keep-all;
+        font-size: 10px;
+        color: #4F4F4F;
+        font-weight: 300;
+        line-height: 100%;
+        line-height: 22px;
+    }
+    
+    .card-3-button .two {
+        padding: 2px 12px 2px 12px;
+        background-color: #86B6FE;
+        color: white;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+    .card-3-button .one {
+        padding: 2px 12px 2px 12px;
+        background-color: #B2CE80;
+        color: white;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+    .card-3-read-button {
+        font-size: 16px;
+        color: #0D6EFD;
+        margin-top: 20px;
+        margin-left: 60%;
+    }
+    
+    .last-subscribe {
+        width: 100%;
+        height: 166px;
+        background-image: url('/image/Rectangle\ 17.png');
+        background-size: cover;
+    }
+    .last-subscribe h1 {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .last-subscribe p {
+        font-size: 10px;
+        color: white;
+        font-weight: 200;
+        padding-top: 10px;
+    }
+    
+    .last-subscribe form {
+        width: 250px;
+        height: 30px;
+        border: solid 1px white;
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .last-subscribe form input {
+         background-color: transparent;
+         padding-left: 20px;
+         width: 550px;
+         border: none;
+    }
+    
+    .last-subscribe form button {
+        text-align: center;
+        padding-left: 10px;
+        font-size: 10px;
+        color: white;
+        font-weight: 100;
+    }
+    
+    .footer-1 p {
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .footer-2 h6 {
+        font-size: 14px;
+    }
+    .footer-2 p {
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 629px;
+        background-color: #031633;
+    }
+
+}   
+
+@media  screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    nav  {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo {
+        width: 75.62px;
+        height: 128.62px;
+        
+    }
+
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 50vh;
+        top: 8vh;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        margin-top: 30%;
+        padding-top: 20px;
+        border-radius: 8px;
+        z-index: 2;
+    }
+    .nav-links li {
+        opacity: 0;
+
+    }
+    .bugger {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: none;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFake {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
